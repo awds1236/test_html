@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 41병동 CQI 활동 포스터</title>
+    <!-- Tailwind CSS CDN 로드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter 폰트 설정 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Soft blue background */
+        }
+        .cqi-card {
+            box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.1);
+            border-left: 8px solid; /* Stronger color bar */
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px; /* Increased vertical spacing */
+            transition: all 0.3s ease;
+        }
+        .cqi-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+        .step-header {
+            font-size: 1.875rem; /* 3xl */
+            font-weight: 700; /* Bold */
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .flow-block {
+            background-color: #eef2ff; /* Light indigo */
+            border: 1px solid #c7d2fe;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .arrow {
+            text-align: center;
+            font-weight: 900;
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+<div id="poster-container" class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-12 border-t-[10px] border-indigo-700">
+
+    <!-- Title Section -->
+    <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-800 tracking-tight mb-2">
+            2025년 CQI 활동 보고서: F-C-U-P-D-C-A
+        </h1>
+        <h2 class="text-xl md:text-3xl font-semibold text-gray-700">
+            정맥주사 부위 관리 개선을 통한 환자 불편감 최소화 (41병동)
+        </h2>
+        <div class="mt-4 text-gray-500 text-base font-medium">
+            활동 기간: 2025년 (중간 보고 시점) | 팀 구성: 41병동 간호팀
+        </div>
+    </header>
+
+    <!-- F-C-U-P-D-C-A Steps - Single Column for Vertical Flow -->
+    <div class="space-y-8">
+
+        <!-- F: FIND (발견) -->
+        <div class="cqi-card bg-white border-lime-600">
+            <div class="step-header text-lime-700">
+                <span class="mr-3 text-3xl">❶</span> FIND (발견)
+            </div>
+            <p class="font-semibold text-gray-800 mb-2">개선이 필요한 과정 발견: 주제 선정의 필요성</p>
+            <div class="p-4 bg-lime-50 rounded-lg border border-lime-200">
+                <p class="text-base text-gray-700">입원 시 정맥주사 치료는 필수 과정이나, 잦은 적용 및 지속된 유지로 인해 환자에게 불편감, 통증, 불안감을 유발하고 있습니다. 안전사고 예방 노력은 성공적이나, <strong class="text-lime-700">환자 경험 차원의 질 향상</strong>이 필요하여 본 주제를 선정했습니다.</p>
+            </div>
+        </div>
+
+        <!-- C: CLARIFY (명확화) -->
+        <div class="cqi-card bg-white border-emerald-600">
+            <div class="step-header text-emerald-700">
+                <span class="mr-3 text-3xl">❷</span> CLARIFY (명확화)
+            </div>
+            <p class="font-semibold text-gray-800 mb-4">현재 업무 과정 정의: 표준화된 주사 부위 관리 흐름도</p>
+            <!-- Flow Chart Simulation -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="flow-block bg-emerald-100 font-bold">주사 부위 사정</div>
+                <div class="arrow md:hidden">▼</div>
+                <div class="col-span-1 md:col-span-2 grid grid-cols-2 gap-3">
+                    <div class="flow-block bg-white border-red-400 text-red-700">불편감 <strong class="font-extrabold">있음</strong></div>
+                    <div class="flow-block bg-white border-green-400 text-green-700">불편감 <strong class="font-extrabold">없음</strong></div>
+                </div>
+                <div class="md:col-span-3 arrow">▼ (듀티별 관리)</div>
+                <div class="flow-block col-span-1 md:col-span-3 bg-emerald-50 text-emerald-800">
+                    <strong class="font-bold">표준 관리:</strong> 듀티별 재사정 및 정보 제공 (불편감 시 IV 제거 고려)
+                </div>
+            </div>
+        </div>
+
+        <!-- U: UNDERSTAND (이해) -->
+        <div class="cqi-card bg-white border-cyan-600">
+            <div class="step-header text-cyan-700">
+                <span class="mr-3 text-3xl">❸</span> UNDERSTAND (이해)
+            </div>
+            <p class="font-semibold text-gray-800 mb-4">문제 현황 및 원인 분석: 기준선 (Baseline Data) <strong class="text-cyan-600">(시각적 자료)</strong></p>
+
+            <!-- Data Table / Visual Comparison -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                    <thead class="bg-cyan-50">
+                        <tr>
+                            <th class="px-3 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider">구분</th>
+                            <th class="px-3 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider text-center">2022년</th>
+                            <th class="px-3 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider text-center">2024년 (현황)</th>
+                            <th class="px-3 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider">주요 내용</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-100">
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-red-600">정맥염 안전사건</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm text-center">1건</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm text-center font-bold text-green-600">0건</td>
+                            <td class="px-3 py-2 text-sm text-gray-500">안전 지표는 목표 달성 중 (Phlebitis 예방)</td>
+                        </tr>
+                        <tr class="bg-yellow-50">
+                            <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-yellow-800">고객 의견 (민원)</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm text-center">-</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm text-center">2건</td>
+                            <td class="px-3 py-2 text-sm text-gray-500">잦은 채혈 멍, 삽입 시 통증 지속 등 환자 경험 관련</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm font-medium text-blue-600">내부 불편사항 보고</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm text-center">-</td>
+                            <td class="px-3 py-2 whitespace-nowrap text-sm text-center font-bold">9건</td>
+                            <td class="px-3 py-2 text-sm text-gray-500">적용 부위 불편 6건, 제거 부위 불편 2건, 불안감 1건</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- P: PLAN (계획) -->
+        <div class="cqi-card bg-white border-blue-600">
+            <div class="step-header text-blue-700">
+                <span class="mr-3 text-3xl">❹</span> PLAN (계획)
+            </div>
+            <p class="font-semibold text-gray-800 mb-4">개선 목표 및 대책 수립 <strong class="text-blue-600">(지표 목표 시각화)</strong></p>
+
+            <div class="space-y-4">
+                <p class="font-medium text-lg text-gray-700">최종 목표: 정맥주사 관련 환자 불편감 및 불안감 최소화</p>
+
+                <!-- Target Progress Bar Simulation -->
+                <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
+                    <p class="text-sm font-bold text-blue-800 mb-1">지표 목표: 내부 불편사항 보고 건수 감소</p>
+                    <div class="flex justify-between text-sm font-medium mb-1">
+                        <span>Baseline: 9건</span>
+                        <span class="text-blue-700">Target: 5건 이하</span>
+                    </div>
+                    <!-- Simplified Progress Bar (Visually representing reduction) -->
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div class="bg-red-500 h-3 rounded-l-full" style="width: 100%;" title="Baseline 9건"></div>
+                        <div class="bg-blue-500 h-3 rounded-r-full -mt-3" style="width: 55%; margin-left: auto;" title="Target 5건"></div>
+                    </div>
+                    <div class="flex justify-between text-xs mt-1 text-gray-500">
+                         <span>9건</span>
+                         <span class="text-blue-700 font-bold">5건</span>
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-700"><span class="font-semibold">대책:</span> 듀티별 표준화된 사정 및 환자 정보 제공 강화 (환자에게 주기적 확인 예정임을 명확히 안내)</p>
+            </div>
+        </div>
+
+        <!-- D: DO (실행) -->
+        <div class="cqi-card bg-white border-yellow-600">
+            <div class="step-header text-yellow-700">
+                <span class="mr-3 text-3xl">❺</span> DO (실행)
+            </div>
+            <p class="font-semibold text-gray-800 mb-4">개선 대책 실행</p>
+            <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-200 space-y-2">
+                <ul class="list-disc pl-5 text-gray-700 text-base">
+                    <li><strong class="text-yellow-700">표준 관리 활동 정착:</strong> 전 간호사를 대상으로 표준화된 주사 부위 사정 및 관리 활동을 실행하고 정착시킴.</li>
+                    <li><strong class="text-yellow-700">커뮤니케이션 강화:</strong> 주사 부위 불편감 유무 확인 시, 다음 듀티에도 재사정 예정임을 환자에게 명확히 고지하여 불안감 감소.</li>
+                    <li><strong class="text-yellow-700">자료 수집:</strong> 실행 단계 후 중간 지표 데이터를 지속적으로 수집 및 분석.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- C: CHECK (점검) -->
+        <div class="cqi-card bg-white border-orange-600">
+            <div class="step-header text-orange-700">
+                <span class="mr-3 text-3xl">❻</span> CHECK (점검)
+            </div>
+            <p class="font-semibold text-gray-800 mb-4">개선 결과 측정 및 평가 <strong class="text-orange-600">(중간 결과 도표)</strong></p>
+
+             <!-- Performance Comparison Table -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                    <thead class="bg-orange-50">
+                        <tr>
+                            <th class="px-4 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider">평가 지표</th>
+                            <th class="px-4 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider text-center">Baseline</th>
+                            <th class="px-4 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider text-center">중간 현황 (예상)</th>
+                            <th class="px-4 py-2 text-xs font-medium text-gray-700 uppercase tracking-wider text-center">최종 목표</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-100">
+                        <tr>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-800">정맥염 안전사건 (건)</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">0건</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center font-bold text-green-600">0건 유지</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">0건</td>
+                        </tr>
+                        <tr class="bg-orange-50">
+                            <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-orange-800">내부 불편사항 보고 (건)</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">9건</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center font-bold text-red-600">감소 추이 확인 중</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">5건 이하</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-800">환자 만족도 (정맥주사 관리 영역)</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">-</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">평가 진행 중</td>
+                            <td class="px-4 py-2 whitespace-nowrap text-sm text-center">향상</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- A: ACT (개선) -->
+        <div class="cqi-card bg-white border-red-600">
+            <div class="step-header text-red-700">
+                <span class="mr-3 text-3xl">❼</span> ACT (개선)
+            </div>
+            <p class="font-semibold text-gray-800 mb-4">표준화 및 지속 관리 계획</p>
+            <div class="p-4 bg-red-50 rounded-lg border border-red-200 space-y-3">
+                <div class="flex items-start">
+                    <span class="text-red-700 font-bold mr-3 mt-1">① 표준화:</span>
+                    <p class="text-base text-gray-700">성공적인 개선 활동은 <strong class="font-semibold">41병동의 정맥주사 관리 표준 프로토콜</strong>로 공식화하여 정착시킵니다.</p>
+                </div>
+                 <div class="flex items-start">
+                    <span class="text-red-700 font-bold mr-3 mt-1">② 지속 관리:</span>
+                    <p class="text-base text-gray-700">정기적인 간호사 교육을 통해 표준화된 간호 역량을 유지하고 불편사항에 대한 <strong class="font-semibold">상시 모니터링 시스템</strong>을 운영합니다.</p>
+                </div>
+                <div class="flex items-start">
+                    <span class="text-red-700 font-bold mr-3 mt-1">③ 최종 공유:</span>
+                    <p class="text-base text-gray-700">퇴원 환자 만족도 설문을 포함한 최종 결과를 분석하여 <strong class="font-semibold">활동 결과를 공유</strong>하고 다른 병동으로의 확대 가능성을 검토합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 pt-6 border-t border-gray-300 text-center">
+        <h4 class="text-2xl font-bold text-indigo-700 mb-3">
+            활동 기대 효과
+        </h4>
+        <p class="text-lg text-gray-700 font-medium">
+            표준화된 정맥주사 관리 간호를 통해 <strong class="text-indigo-600">환자 경험과 만족도를 극대화</strong>하고, <strong class="text-indigo-600">안전 및 품질 지표를 지속적으로 유지</strong>합니다.
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
